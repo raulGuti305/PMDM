@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Actividades_PMDM"
 include(":app")
- 
+include(":app:rrepasoej1")
