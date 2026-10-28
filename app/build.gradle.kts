@@ -3,9 +3,14 @@ plugins {
 }
 
 android {
+    buildFeatures   {
+        viewBinding = true
+    }
+
     namespace = "com.example.pmdmud1.actividades_pmdm"
     compileSdk {
         version = release(37)
+
     }
 
     defaultConfig {

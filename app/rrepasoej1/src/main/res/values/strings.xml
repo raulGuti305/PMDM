@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RrepasoEj1</string>
+    <string name="hint1">Introduce tu nombre: </string>
+    <string name="hint2">Introduce la duración en minutos: </string>
+    <string name="hint3">Introduce la intensidad del ejercicio: </string>
+    <string name="texto_boton_registrar">Registrar entrenamiento</string>
+    <string name="texto_boton_limpiar">Limpiar campos</string>
+    <string name="tvResultado">Resultado:</string>
 </resources>

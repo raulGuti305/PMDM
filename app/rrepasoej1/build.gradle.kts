@@ -3,6 +3,10 @@ plugins {
 }
 
 android {
+    buildFeatures   {
+        viewBinding = true
+    }
+
     namespace = "com.example.pmdmud1.rrepasoej1"
     compileSdk {
         version = release(37)

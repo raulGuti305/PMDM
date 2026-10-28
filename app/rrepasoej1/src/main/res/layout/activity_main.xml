@@ -1,29 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/texto1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro de entrenamiento"
+            style="@style/TituloPantalla" />
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Hola desde PMDP. que tal todo?"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/texto1"/>
+        <!-- TODO: construye la interfaz completa siguiendo los id del PDF:
+             etNombre (texto), etMinutos (entero), etIntensidad (entero), btnRegistrar, btnLimpiar, tvResultado.
+             Aplica los estilos definidos en res/values/styles.xml. -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNombre"
+            android:inputType="text"
+            style="@style/CampoFormulario"
+            android:hint="@string/hint1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etMinutos"
+            android:inputType="number"
+            style="@style/CampoFormulario"
+            android:hint="@string/hint2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etIntensidad"
+            android:inputType="number"
+            style="@style/CampoFormulario"
+            android:hint="@string/hint3"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BotonPrincipal"
+            android:text="@string/texto_boton_registrar"
+            android:id="@+id/btnRegistrar"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BotonSecundario"
+            android:text="@string/texto_boton_limpiar"
+            android:id="@+id/btnLimpiar"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvResultado"
+            android:text="@string/tvResultado"
+            style="@style/TextoResultado"
+            />
+
+    </LinearLayout>
+</ScrollView>
