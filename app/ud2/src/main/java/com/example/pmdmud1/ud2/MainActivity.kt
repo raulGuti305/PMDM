@@ -13,12 +13,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(com.example.pmdmud1.rrepasoej1.R.layout.activity_main)
+        setContentView(com.example.pmdmud1.ud2.R.layout.activity_main)
 
-        val entrada = findViewById<EditText>(com.example.pmdmud1.rrepasoej1.R.id.etProducto)
-        val boton = findViewById<Button>(com.example.pmdmud1.rrepasoej1.R.id.btnAgregar)
-        val lista = findViewById<ListView>(com.example.pmdmud1.rrepasoej1.R.id.lvProductos)
-        val estado = findViewById<TextView>(com.example.pmdmud1.rrepasoej1.R.id.tvEstado)
+        val entrada = findViewById<EditText>(com.example.pmdmud1.ud2.R.id.etProducto)
+        val boton = findViewById<Button>(com.example.pmdmud1.ud2.R.id.btnAgregar)
+        val lista = findViewById<ListView>(com.example.pmdmud1.ud2.R.id.lvProductos)
+        val estado = findViewById<TextView>(com.example.pmdmud1.ud2.R.id.tvEstado)
         val adaptador = ArrayAdapter(
             this, android.R.layout.simple_list_item_1, productos
         )

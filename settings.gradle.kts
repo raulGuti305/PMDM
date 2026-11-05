@@ -26,3 +26,4 @@ rootProject.name = "Actividades_PMDM"
 include(":app")
 include(":app:rrepasoej1")
 include(":app:ud2")
+include(":app:ud2:ej1")
